@@ -37,11 +37,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
-
-
-window.addEventListener('resize', () => {
-  if (window.innerWidth > 800) {
-    nav?.classList.remove('open');
-    menuToggle?.setAttribute('aria-expanded', 'false');
-  }
-}, { passive: true });
