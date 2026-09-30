@@ -1251,3 +1251,31 @@ img{
   }
 
 }
+
+
+/* =========================================
+   AGREGADO: foco de teclado y menos movimiento
+   (no cambia el diseño visual)
+   ========================================= */
+
+html{
+  scroll-padding-top:90px;
+}
+
+a:focus-visible,
+button:focus-visible{
+  outline:3px solid var(--blue2);
+  outline-offset:3px;
+}
+
+.hero a:focus-visible,
+.site-footer a:focus-visible{
+  outline-color:#fff;
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{ scroll-behavior:auto; }
+  *{ transition:none !important; }
+  .hero-whatsapp:hover,
+  .service-card:hover{ transform:none; }
+  }
