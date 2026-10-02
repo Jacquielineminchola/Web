@@ -1,76 +1,580 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacqui Helen Minchola - Tu Asesora Patrimonial</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Tu Asesora Patrimonial | Seguros e Inversiones
+  </title>
+
+  <meta
+    name="description"
+    content="Asesoría personalizada en seguros, protección patrimonial e inversiones."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+  <style>
+    .whatsapp-btn {
+      position: fixed !important;
+      bottom: 30px !important;
+      right: 30px !important;
+      width: 60px !important;
+      height: 60px !important;
+      background-color: #25d366 !important;
+      color: #fff !important;
+      border-radius: 50% !important;
+      text-align: center !important;
+      font-size: 30px !important;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3) !important;
+      z-index: 999999 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      text-decoration: none !important;
+      transition: transform 0.3s ease !important;
+    }
+
+    .whatsapp-btn:hover {
+      transform: scale(1.1) !important;
+    }
+  </style>
+
 </head>
+
 <body>
 
-    <div class="card-container">
-        <header class="card-header">
-            <div class="header-bg">
-                <img src="fondo.jpg" alt="Fondo de mapa mundial">
-            </div>
-            <div class="profile-pic-container">
-                <img src="perfil.png" alt="Jacqui Helen Minchola" class="profile-pic">
-            </div>
-        </header>
+  <!-- =========================================
+       HEADER
+       ========================================= -->
 
-        <section class="profile-info">
-            <h1>JACQUELINE<br> HELEN<br>MINCHOLA</h1>
-            <p class="subtitle">SEGUROS E INVERSIONES</p>
-        </section>
+  <header class="site-header">
 
-        <section class="main-action">
-            <!-- Enlace corregido con el signo "?" necesario para WhatsApp -->
-            <a href="https://wa.me." target="_blank" class="btn-primary">
-                AGENDAR CITA GRATUITA
-            </a>
-        </section>
+    <div class="container nav-wrap">
 
-        <nav class="social-links">
-            <a href="https://www.linkedin.com/in/jacqueline-minchola-71516a193" target="_blank" class="link-item">
-                <span class="icon-box"><i class="fab fa-linkedin-in"></i></span>
-                <span class="link-text">LINKEDIN</span>
-            </a>
-            <a href="https://www.instagram.com/JACQUIHELEN_AF" target="_blank" class="link-item">
-                <span class="icon-box"><i class="fab fa-instagram"></i></span>
-                <span class="link-text">INSTAGRAM</span>
-            </a>
-            <a href="https://www.facebook.com/100064883567557/" target="_blank" class="link-item">
-                <span class="icon-box"><i class="fab fa-facebook-f"></i></span>
-                <span class="link-text">FACEBOOK</span>
-            </a>
-        </nav>
+      <a
+        class="brand"
+        href="#inicio"
+        aria-label="Tu Asesora Patrimonial"
+      >
 
-        <!-- NUEVO: Sección del Formulario de Contacto Conectado a Formspree -->
-        <section class="contact-form-section">
-            <h2>Escríbeme directamente</h2>
-            <!-- REEMPLAZA TU_ID_DE_FORMSPREE con el código que te dé Formspree -->
-            <form action="https://formspree.io" method="POST" class="contact-form">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Tu Nombre" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="_replyto" placeholder="Tu Correo Electrónico" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" rows="4" placeholder="¿En qué puedo ayudarte?" required></textarea>
-                </div>
-                <button type="submit" class="btn-submit">ENVIAR MENSAJE</button>
-            </form>
-        </section>
+        <img
+          src="assets/logo-tu-asesora.png"
+          alt="Tu Asesora Patrimonial"
+        >
 
-        <footer class="card-footer">
-            <img src="logo.png" alt="Tu Asesora Patrimonial Logo" class="footer-logo">
-        </footer>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+      >
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+      <nav class="main-nav">
+
+        <a
+          class="active"
+          href="#inicio"
+        >
+          Inicio
+        </a>
+
+        <a href="#sobre-mi">
+          Sobre mí
+        </a>
+
+        <a href="#servicios">
+          Servicios
+        </a>
+
+        <a href="#beneficios">
+          Beneficios
+        </a>
+
+        <a href="#testimonios">
+          Testimonios
+        </a>
+
+        <a href="#contacto">
+          Contacto
+        </a>
+
+      </nav>
+
+      <div class="social-top">
+
+        <a
+          href="#"
+          aria-label="Facebook"
+        >
+          f
+        </a>
+
+        <a
+          href="#"
+          aria-label="Instagram"
+        >
+          ◎
+        </a>
+
+        <a
+          href="#"
+          aria-label="LinkedIn"
+        >
+          in
+        </a>
+
+      </div>
+
     </div>
 
+  </header>
+
+  <main>
+
+    <!-- =========================================
+         HERO
+         ========================================= -->
+
+    <section
+      id="inicio"
+      class="hero"
+    >
+
+      <div class="hero-bg"></div>
+
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+
+          <span class="hero-eyebrow">
+            SEGUROS E INVERSIONES
+          </span>
+
+          <h1>
+            Protege hoy lo que
+            has construido
+          </h1>
+
+          <h2>
+            Tu tranquilidad y la de tu familia
+            también forman parte de tu patrimonio.
+          </h2>
+
+          <p>
+            Te acompaño a diseñar una estrategia de
+            protección patrimonial e inversión de acuerdo
+            con tus necesidades y objetivos.
+          </p>
+
+          <a
+            class="hero-whatsapp"
+            href="https://wa.me/51932100066"
+            target="_blank"
+            rel="noopener"
+          >
+
+            <span>
+              WhatsApp
+            </span>
+
+            <span>
+              →
+            </span>
+
+          </a>
+
+        </div>
+
+        <div class="hero-person">
+
+          <img
+            class="hero-profile-image"
+            src="assets/hero-jacqueline.png"
+            alt="Asesora patrimonial"
+          >
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================================
+         BENEFICIOS
+         ========================================= -->
+
+    <section
+      id="beneficios"
+      class="why"
+    >
+
+      <div class="container why-container">
+
+        <!-- TITULO -->
+
+        <div class="why-header">
+
+          <h2>
+            ¿Por qué es clave tener una
+            <br>
+            estrategia de protección
+            <br>
+            patrimonial?
+          </h2>
+
+          <p>
+            Contar con una estrategia de protección patrimonial permite
+            anticiparse a los riesgos, resguardar lo que has construido y
+            asegurar la tranquilidad de tu presente y el futuro de tu familia.
+          </p>
+
+        </div>
+
+        <!-- CUATRO BENEFICIOS -->
+
+        <div class="why-benefits">
+
+          <!-- ================================
+               CONFIANZA
+               ================================ -->
+
+          <article class="why-benefit">
+
+            <div class="why-icon">
+
+              <img
+                src="assets/icon-confianza.png"
+                alt=""
+                aria-hidden="true"
+              >
+
+            </div>
+
+            <h3>
+              Confianza y respaldo
+            </h3>
+
+            <p>
+              Brinda tranquilidad al saber que tu patrimonio está protegido
+              ante imprevistos y situaciones inesperadas.
+            </p>
+
+          </article>
+
+          <!-- ================================
+               ASESORIA
+               ================================ -->
+
+          <article class="why-benefit">
+
+            <div class="why-icon">
+
+              <img
+                src="assets/icon-asesoria.png"
+                alt=""
+                aria-hidden="true"
+              >
+
+            </div>
+
+            <h3>
+              Asesoría personalizada
+            </h3>
+
+            <p>
+              Permite tomar decisiones informadas, con soluciones adaptadas
+              a tus necesidades y objetivos específicos.
+            </p>
+
+          </article>
+
+          <!-- ================================
+               SEGURIDAD FAMILIAR
+               ================================ -->
+
+          <article class="why-benefit">
+
+            <div class="why-icon">
+
+              <img
+                src="assets/icon-seguridad.png"
+                alt=""
+                aria-hidden="true"
+              >
+
+            </div>
+
+            <h3>
+              Seguridad familiar
+            </h3>
+
+            <p>
+              Protege a tus seres queridos y garantiza su bienestar,
+              incluso en escenarios de incertidumbre.
+            </p>
+
+          </article>
+
+          <!-- ================================
+               LEGADO
+               ================================ -->
+
+          <article class="why-benefit">
+
+            <div class="why-icon">
+
+              <img
+                src="assets/icon-legado.png"
+                alt=""
+                aria-hidden="true"
+              >
+
+            </div>
+
+            <h3>
+              Legado sólido
+            </h3>
+
+            <p>
+              Asegura que tu esfuerzo y lo que construyes hoy perdure
+              en el tiempo para las futuras generaciones.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================================
+         SERVICIOS
+         ========================================= -->
+
+    <section
+      id="servicios"
+      class="services"
+    >
+
+      <div class="container">
+
+        <div class="services-header">
+
+          <h2>
+            Soluciones para proteger
+            lo que más valoras
+          </h2>
+
+          <p>
+            Encuentra alternativas diseñadas para acompañarte
+            en cada etapa de tu vida financiera y patrimonial.
+          </p>
+
+        </div>
+
+        <div class="service-grid">
+
+          <article class="service-card">
+
+            <div class="service-icon">
+              🛡
+            </div>
+
+            <h3>
+              Seguros de vida
+            </h3>
+
+            <p>
+              Protección financiera para ti y las personas
+              que dependen de ti.
+            </p>
+
+          </article>
+
+          <article class="service-card">
+
+            <div class="service-icon">
+              ❤
+            </div>
+
+            <h3>
+              Seguros de salud
+            </h3>
+
+            <p>
+              Alternativas de protección para afrontar
+              gastos médicos y situaciones inesperadas.
+            </p>
+
+          </article>
+
+          <article class="service-card">
+
+            <div class="service-icon">
+              ◈
+            </div>
+
+            <h3>
+              Ahorro e inversión
+            </h3>
+
+            <p>
+              Estrategias orientadas a construir y hacer
+              crecer tu patrimonio.
+            </p>
+
+          </article>
+
+          <article class="service-card">
+
+            <div class="service-icon">
+              🏠
+            </div>
+
+            <h3>
+              Protección patrimonial
+            </h3>
+
+            <p>
+              Soluciones para proteger los bienes y
+              recursos que has construido.
+            </p>
+
+          </article>
+
+          <article class="service-card">
+
+            <div class="service-icon">
+              👨‍👩‍👧
+            </div>
+
+            <h3>
+              Protección familiar
+            </h3>
+
+            <p>
+              Planificación para cuidar el bienestar
+              económico de tu familia.
+            </p>
+
+          </article>
+
+          <article class="service-card">
+
+            <div class="service-icon">
+              🌎
+            </div>
+
+            <h3>
+              Soluciones internacionales
+            </h3>
+
+            <p>
+              Opciones de protección e inversión con
+              alcance internacional.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================================
+         INTERNACIONAL
+         ========================================= -->
+
+    <section class="international">
+
+      <div class="container international-grid">
+
+        <div>
+
+          <h2>
+            Protección con alcance
+            internacional
+          </h2>
+
+          <p>
+            Accede a alternativas de protección y planificación
+            patrimonial que te permiten mirar más allá de las
+            fronteras y construir una estrategia de largo plazo.
+          </p>
+
+        </div>
+
+        <div class="market-visual">
+
+          <img
+            src="assets/mapa-mundo.jpg"
+            alt="Mercados internacionales"
+          >
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- =========================================
+       FOOTER
+       ========================================= -->
+
+  <footer
+    id="contacto"
+    class="site-footer"
+  >
+
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a
+    href="https://wa.me/51932100066"
+    class="whatsapp-btn"
+    target="_blank"
+    rel="noopener"
+    aria-label="Contactar por WhatsApp"
+  >
+    💬
+  </a>
+
 </body>
+
 </html>
