@@ -110,11 +110,43 @@ section{scroll-margin-top:calc(var(--header-h) + 10px)}
   .international-grid{gap:32px}
 }
 @media (max-width:620px){
-  .why-benefits,.service-grid{grid-template-columns:1fr}
-  .brand img{width:150px}
-  .why,.services,.international{padding-block:64px}
-  .cta{padding-top:64px}
-  .footer-bottom{flex-direction:column;text-align:center;align-items:center}
+  :root{--header-h:62px}
+  .brand img{width:125px}
+  .btn{min-height:44px;padding:10px 20px;font-size:14px}
+
+  .hero-copy{padding:30px 0 0}
+  .hero h1{font-size:1.85rem;letter-spacing:-.8px;margin-bottom:10px}
+  .hero h2{font-size:1rem;margin-bottom:12px}
+  .hero p{font-size:14px;margin-bottom:20px}
+  .hero-person img{max-height:250px}
+
+  .why,.services,.international{padding-block:46px}
+  .section-head{margin-bottom:26px}
+  .section-head h2{font-size:1.45rem;letter-spacing:-.4px}
+  .section-head p{font-size:14.5px}
+
+  .why-benefits,.service-grid{grid-template-columns:1fr;gap:14px}
+  .why-benefit{padding:20px 16px}
+  .why-icon{width:62px;height:62px;border-radius:16px;margin-bottom:12px}
+  .why-icon img{width:36px;height:36px}
+  .why-benefit h3{font-size:1rem;margin-bottom:6px}
+  .why-benefit p{font-size:.88rem;line-height:1.55}
+
+  .service-card{padding:20px 18px}
+  .ico{width:50px;height:50px;font-size:1.5rem;border-radius:13px;margin-bottom:12px}
+  .service-card h3{font-size:1.05rem;margin-bottom:6px}
+  .service-card p{font-size:.9rem;line-height:1.55}
+
+  .international h2{font-size:1.45rem;margin-bottom:12px}
+  .international p{font-size:14.5px}
+  .international-grid{gap:24px}
+  .market-visual{border-radius:18px}
+
+  .cta{padding:46px 0 32px}
+  .cta h2{font-size:1.45rem}
+  .cta p{font-size:14.5px;margin-bottom:20px}
+  .footer-bottom{flex-direction:column;text-align:center;align-items:center;font-size:12px}
+  .whatsapp-btn{width:50px;height:50px;font-size:24px;right:16px;bottom:16px}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
