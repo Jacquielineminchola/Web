@@ -1,27 +1,205 @@
-        <!-- Ejemplo de estructura correcta para tus tarjetas de servicios dentro de .service-grid -->
-        <div class="service-grid">
-          
-          <article class="service-card">
-            <div class="service-icon">🛡</div>
-            <h3>Seguros de vida</h3>
-            <p>Protección financiera para ti y las personas que dependen de ti.</p>
-          </article>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
 
-          <article class="service-card">
-            <div class="service-icon">❤️</div>
-            <h3>Seguros de salud</h3>
-            <p>Alternativas de protección para afrontar gastos médicos.</p>
-          </article>
+body {
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
 
-          <article class="service-card">
-            <div class="service-icon">📈</div>
-            <h3>Ahorro e inversión</h3>
-            <p>Estrategias orientadas a hacer crecer tu patrimonio.</p>
-          </article>
+.card-container {
+    background-color: #e6e7ec;
+    width: 100%;
+    max-width: 430px; 
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 35px;
+    position: relative;
+}
 
-        </div> <!-- Cierre de service-grid -->
-      </div> <!-- Cierre de container -->
-    </section> <!-- Cierre de servicios -->
-  </main>
-</body>
-</html>
+.card-header {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    margin-bottom: 65px;
+}
+
+.header-bg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #c9cbd3;
+}
+
+.header-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.45; 
+}
+
+.profile-pic-container {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 4px solid #b3a4c4; 
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.profile-info h1 {
+    font-size: 1.35rem;
+    color: #2b2c30;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 0.75rem;
+    color: #57585c;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.main-action {
+    width: 100%;
+    padding: 0 35px;
+    margin-bottom: 35px;
+}
+
+.btn-primary {
+    display: block;
+    width: 100%;
+    background-color: #a493b8; 
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-shadow: 0 6px 15px rgba(164, 147, 184, 0.35);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.btn-primary:hover {
+    background-color: #9381a9;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(147, 129, 169, 0.5);
+}
+
+.btn-primary:active {
+    transform: translateY(1px);
+}
+
+.social-links {
+    width: 100%;
+    padding: 0 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #d8dadf; 
+    border: 1px solid #c2c4cc;
+    text-decoration: none;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.icon-box {
+    background-color: #92949c; 
+    color: #ffffff;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.15rem;
+    transition: background-color 0.3s ease;
+}
+
+.link-text {
+    flex: 1;
+    text-align: center;
+    color: #38393d;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 1.2px;
+    padding-right: 48px; 
+}
+
+.link-item:hover {
+    transform: translateX(4px);
+    background-color: #e1e3e8;
+    border-color: #a493b8;
+}
+
+.link-item:hover .icon-box {
+    background-color: #a493b8;
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+.footer-logo {
+    max-width: 140px;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.9;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0;
+    }
+    .card-container {
+        max-width: 100%;
+        min-height: 100vh;
+        border-radius: 0;
+    }
+    .card-header {
+        height: 200px;
+    }
+        }
